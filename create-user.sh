@@ -2,10 +2,6 @@
 
 # This script will create a linux user
 
-USER_NAME=$1
-COMMENT=$2
-PASSWORD=$3
-
 # Ask for the user name.
 read -p 'Enter the username to create: ' USER_NAME
 
@@ -21,8 +17,8 @@ useradd -c "${COMMENT}" -m ${USER_NAME}
 # Set the password for the user.
 echo "${USER_NAME}:${PASSWORD}" | chpasswd
 
-#Force Password change on first login.
+# Force password change on first login.
 passwd -e ${USER_NAME}
 
-# shows the user created in server
+# Show the user created in server
 getent passwd | grep $USER_NAME
