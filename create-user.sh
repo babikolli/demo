@@ -16,13 +16,13 @@ read -p 'Enter the name of the person who this account is for: ' COMMENT
 read -p 'Enter the password to use for the account: ' PASSWORD
 
 # Create the user.
-sudo useradd -c "${COMMENT}" -m ${USER_NAME}
+useradd -c "${COMMENT}" -m ${USER_NAME}
 
 # Set the password for the user.
-sudo echo "${USER_NAME}:${PASSWORD}" | chpasswd
+echo "${USER_NAME}:${PASSWORD}" | chpasswd
 
 #Force Password change on first login.
-sudo passwd -e ${USER_NAME}
+passwd -e ${USER_NAME}
 
 # shows the user created in server
-sudo getent passwd | grep $USER_NAME
+getent passwd | grep $USER_NAME
