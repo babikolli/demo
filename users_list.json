@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "username": "user1",
+      "comment": "User 1",
+      "password": "password1"
+    },
+    {
+      "username": "user2",
+      "comment": "User 2",
+      "password": "password2"
+    },
+    {
+      "username": "user3",
+      "comment": "User 3",
+      "password": "password3"
+    },
+    {
+      "username": "user4",
+      "comment": "User 4",
+      "password": "password4"
+    },
+    {
+      "username": "user5",
+      "comment": "User 5",
+      "password": "password5"
+    },
+    {
+      "username": "user6",
+      "comment": "User 6",
+      "password": "password6"
+    },
+    {
+      "username": "user7",
+      "comment": "User 7",
+      "password": "password7"
+    },
+    {
+      "username": "user8",
+      "comment": "User 8",
+      "password": "password8"
+    },
+    {
+      "username": "user9",
+      "comment": "User 9",
+      "password": "password9"
+    },
+    {
+      "username": "user10",
+      "comment": "User 10",
+      "password": "password10"
+    },
+    {
+      "username": "user11",
+      "comment": "User 11",
+      "password": "password11"
+    },
+    {
+      "username": "user12",
+      "comment": "User 12",
+      "password": "password12"
+    },
+    {
+      "username": "user13",
+      "comment": "User 13",
+      "password": "password13"
+    },
+    {
+      "username": "user14",
+      "comment": "User 14",
+      "password": "password14"
+    },
+    {
+      "username": "user15",
+      "comment": "User 15",
+      "password": "password15"
+    }
+  ]
+}
+
