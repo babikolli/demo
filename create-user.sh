@@ -22,9 +22,4 @@ echo "${USER_NAME}:${PASSWORD}" | chpasswd
 passwd -e ${USER_NAME}
 
 # show all the users in server
-sudo getent passwd
-
-#it shows script created user
-echo "user created by script"
-
 sudo getent passwd | grep $USER_NAME
