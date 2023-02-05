@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#insall json file system
+sudo apt install jq
+
 # Location of the JSON file
 JSON_FILE='./user_list.json'
 
@@ -12,13 +15,13 @@ do
   PASSWORD=$(jq -r .users[$i].password $JSON_FILE)
 
   # Create the user
-  useradd -c "${COMMENT}" -m ${USER_NAME}
+  sudo useradd -c "${COMMENT}" -m ${USER_NAME}
 
   # Set the password for the user
-  echo "${USER_NAME}:${PASSWORD}" | chpasswd
+  sudo echo "${USER_NAME}:${PASSWORD}" | chpasswd
 
   # Force password change on first login
-  passwd -e ${USER_NAME}
+  sudo passwd -e ${USER_NAME}
 
   i=$((i + 1))
 done
